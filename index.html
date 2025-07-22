@@ -163,15 +163,17 @@
     </section>
 
     <!--diseño pie de página-->
-    <footer class="footer">
-        <div class="footer-text">
-            <p>Diseñado y desarrollado por Juan Manuel Osorio &copy; 2023 | Todos los derechos reservados</p>
-        </div>
-
-        <div class="footer-iconTop">
-            <a href="#inicio"><i class='bx bx-up-arrow-alt'></i></a>
-        </div>
+    <footer id="miFooter">
+             <p>Diseñado y desarrollado por Juan Manuel Osorio | Todos los derechos reservados © <span id="anio-actual"></span></p>
     </footer>
+
+    <script>
+           document.addEventListener("DOMContentLoaded", function() {
+              const fecha = new Date();
+               const anio = fecha.getFullYear();
+            document.getElementById("anio-actual").textContent = anio;
+          });
+    </script>
 
     <!-- scroll reveal-->
     <script src="https://unpkg.com/scrollreveal"></script>
