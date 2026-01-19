@@ -7,7 +7,6 @@ menuIcon.onclick = () => {
     navbar.classList.toggle('active');
 };
 
-/* Enlace activo de la sección de desplazamiento */
 let secciones = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('header nav a');
 
@@ -33,7 +32,6 @@ window.onscroll = () => {
     navbar.classList.remove('active');
 };
 
-/* Scroll Reveal */
 ScrollReveal({ 
     distance: '80px',
     duration: 2000,
@@ -47,13 +45,12 @@ ScrollReveal().reveal('.inicio-content p, .sobreMi-content', { origin: 'right'})
 
 const typed = new Typed('.multiple-text', {
     strings: [
-        'Desarrollo Fullstack', 
+        'Desarrollo Full Stack', 
         'WordPress Expert', 
         'Implementación de IA', 
-        'Diseño Web'
+        'Diseño Web UI/UX'
     ],
     typeSpeed: 100,
     backSpeed: 100,
     loop: true
 });
-
