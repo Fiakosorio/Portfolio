@@ -49,11 +49,10 @@ const typed = new Typed('.multiple-text', {
     loop: true
 });
 
-// AÑO ACTUALIZADO EN EL FOOTER
+// AÑO ACTUALIZADO DINÁMICAMENTE PARA EL FOOTER
 document.addEventListener("DOMContentLoaded", function() {
     const yearSpan = document.getElementById("anio-actual");
     if (yearSpan) {
         yearSpan.textContent = new Date().getFullYear();
     }
 });
-
