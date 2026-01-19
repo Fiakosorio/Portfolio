@@ -85,6 +85,10 @@ section {
     align-items: center;
 }
 
+.inicio-content {
+    max-width: 60rem;
+}
+
 .inicio-img img {
     width: 25vw;
     animation: floatImage 4s ease-in-out infinite;
@@ -381,7 +385,7 @@ span {
     color: var(--second-bg-color);
 }
 
-/* BREAKPOINTS - Restaurados a tu código original */
+/* BREAKPOINTS - Tus originales */
 @media (max-width: 1200px) {
     html { font-size: 55%; }
 }
@@ -420,6 +424,3 @@ span {
     html { font-size: 50%; }
     .contacto form .input-caja input { width: 100%; }
 }
-
-
-
