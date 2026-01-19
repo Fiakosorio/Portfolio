@@ -43,12 +43,8 @@ ScrollReveal().reveal('.inicio-content h1, .sobreMi-img', { origin: 'left'});
 ScrollReveal().reveal('.inicio-content p, .sobreMi-content', { origin: 'right'});
 
 const typed = new Typed('.multiple-text', {
-    strings: ['Full Stack Developer', 'WordPress Expert', 'Implementador de IA', 'Diseñador Web'],
+    strings: ['Desarrollo Fullstack', 'WordPress', 'Implementación de IA', 'Diseño Web'],
     typeSpeed: 100,
     backSpeed: 100,
     loop: true
-});
-
-document.addEventListener("DOMContentLoaded", function() {
-    document.getElementById("anio-actual").textContent = new Date().getFullYear();
 });
