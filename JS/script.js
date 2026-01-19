@@ -44,13 +44,9 @@ ScrollReveal().reveal('.inicio-content h1, .sobreMi-img', { origin: 'left'});
 ScrollReveal().reveal('.inicio-content p, .sobreMi-content', { origin: 'right'});
 
 const typed = new Typed('.multiple-text', {
-    strings: [
-        'Desarrollo Full Stack', 
-        'WordPress Expert', 
-        'Implementación de IA', 
-        'Diseño Web UI/UX'
-    ],
+    strings: ['Full Stack Developer', 'WordPress Expert', 'Implementador de IA', 'Diseñador Web'],
     typeSpeed: 100,
     backSpeed: 100,
     loop: true
 });
+
