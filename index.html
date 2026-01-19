@@ -10,6 +10,7 @@
     <link rel="shortcut icon" href="./favicon.ico" type="Images/x-icon">
 </head>
 <body>
+
     <header class="header">
         <a href="#" class="logo">Portfolio <span>Profesional</span> <i class='bx bx-briefcase-alt-2'></i></a>
         <i class='bx bx-menu' id="menu-icon"></i>
@@ -45,8 +46,8 @@
         </div>
         <div class="sobreMi-content">
             <h2 class="heading">Sobre <span>Mí</span></h2>
-            <h3>Desarrollador Full Stack</h3>
-            <p>Evolucioné del diseño web clásico hacia el desarrollo moderno. Mi enfoque actual integra PHP y WordPress con la agilidad de React y Tailwind CSS, optimizando procesos mediante Inteligencia Artificial.</p>
+            <h3>Desarrollo con Propósito</h3>
+            <p>Desde 2020 me he formado de manera autodidacta, evolucionando del diseño web clásico hacia el desarrollo Full Stack moderno. Mi objetivo es crear herramientas digitales eficientes, combinando PHP y WordPress con la agilidad de React y Tailwind CSS.</p>
             <a href="#" class="btn">Leer Más</a>
         </div>
     </section>
@@ -56,7 +57,7 @@
         <div class="servicios-container">
             <div class="servicios-caja">
                 <i class='bx bx-code-alt'></i>
-                <h3>Full Stack Dev</h3>
+                <h3>Desarrollo Fullstack</h3>
                 <p>Aplicaciones dinámicas con React en el frontend y arquitecturas robustas en PHP/MySQL.</p>
             </div>
             <div class="servicios-caja">
@@ -151,9 +152,15 @@
         </div>
     </footer>
 
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        document.getElementById("anio-actual").textContent = new Date().getFullYear();
+      });
+    </script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="JS/script.js"></script>
 </body>
 </html>
+
 
