@@ -78,51 +78,43 @@ section {
     display: none;
 }
 
+/* Contenedor principal de la sección */
 .inicio {
     display: flex;
-    justify-content: center;
+    justify-content: space-between; /* Texto a la izquierda, foto a la derecha */
     align-items: center;
+    gap: 8rem; /* SEPARACIÓN REAL entre tu foto y el texto */
 }
 
-.inicio-img img {
-    width: 25vw;
-    animation: floatImage 4s ease-in-out infinite;
-    border-radius: 10%;
-}
-
-@keyframes floatImage {
-    0% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-2.4rem);
-    }
-    100% {
-        transform: translateY(0);
-    }
+/* Caja de contenido de texto */
+.inicio-content {
+    max-width: 60rem; /* Para que el texto no se desparrame */
 }
 
 .inicio-content h3 {
     font-size: 3.2rem;
     font-weight: 700;
-}
-
-.inicio-content h3:nth-of-type(2) {
-    margin-bottom: 2rem;
-}
-
-span {
-    color: var(--main-color);
+    margin-bottom: 1rem; /* Separa el "Hola soy" del nombre */
 }
 
 .inicio-content h1 {
     font-size: 5.6rem;
     font-weight: 700;
-    line-height: 1.3;
+    line-height: 1.2;
+    margin-bottom: 1.5rem; /* Separa tu nombre del "Especialista en..." */
 }
 
+/* El h3 que contiene el Typed.js (Especialista en...) */
+.inicio-content h3:nth-of-type(2) {
+    margin-bottom: 2.5rem; 
+    color: var(--text-color);
+}
+
+/* El párrafo con la frase de impacto que me pediste */
 .inicio-content p {
-    font-size: 1.6rem;
+    font-size: 1.8rem; /* Un pelín más grande para que se lea mejor */
+    line-height: 1.6;
+    margin-bottom: 3rem; /* Espacio antes de los iconos sociales */
 }
 
 .social-media a {
@@ -520,3 +512,4 @@ span {
         margin-top: 2rem;
     }
 }
+
