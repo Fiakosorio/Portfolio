@@ -130,7 +130,36 @@
 
     <section class="contacto" id="contacto">
         <h2 class="heading">Contacta<span> Me</span></h2>
-        <form action
+        <form action="https://formsubmit.co/juanmosorio@hotmail.com" method="post">
+            <div class="input-caja">
+                <input type="text" name="name" placeholder="Nombre Completo" required>
+                <input type="email" name="email" placeholder="Email" required>
+            </div>
+            <div class="input-caja">
+                <input type="number" name="phone" placeholder="Celular">
+                <input type="text" name="address" placeholder="Domicilio">
+            </div>
+            <textarea name="message" cols="30" rows="10" placeholder="Tu Mensaje" required></textarea>
+            <input type="submit" value="Enviar Mensaje" class="btn">
+        </form>
+    </section>
 
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Diseñado y desarrollado por Juan Manuel Osorio &copy; <span id="anio-actual"></span> | Todos los derechos reservados</p>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#inicio"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
 
-
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        document.getElementById("anio-actual").textContent = new Date().getFullYear();
+      });
+    </script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="JS/script.js"></script>
+</body>
+</html>
