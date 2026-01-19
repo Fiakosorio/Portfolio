@@ -47,8 +47,8 @@ section {
 }
 
 .header.sticky {
-    background: var(--bg-color);
     border-bottom: .1rem solid rgba(0, 0, 0, .2);
+    background: var(--bg-color);
 }
 
 .logo {
@@ -95,6 +95,11 @@ section {
     margin-bottom: 2rem;
 }
 
+/* FIX PARA TEXTO DE TYPED EN TURQUESA */
+.multiple-text {
+    color: var(--main-color);
+}
+
 .inicio-content h1 {
     font-size: 5.6rem;
     font-weight: 700;
@@ -105,11 +110,14 @@ section {
     font-size: 1.6rem;
 }
 
+/* FIX FOTO: CUADRADO CON BORDES REDONDEADOS */
 .inicio-img img {
-    width: 25vw;
-    border-radius: 4rem; /* MATAMOS LA FORMA DE HUEVO */
+    width: 32vw;
+    height: 32vw;
+    object-fit: cover;
+    border-radius: 4rem; 
     border: .4rem solid var(--main-color);
-    box-shadow: 0 0 2rem var(--main-color);
+    box-shadow: 0 0 2.5rem var(--main-color);
     animation: floatImage 4s ease-in-out infinite;
 }
 
@@ -166,7 +174,7 @@ section {
 }
 
 .sobreMi-img img {
-    width: 25vw;
+    width: 32vw;
     border-radius: 2rem;
 }
 
@@ -191,10 +199,6 @@ section {
 .sobreMi-content p {
     font-size: 1.6rem;
     margin: 2rem 0 3rem;
-}
-
-.servicios {
-    background: var(--bg-color);
 }
 
 .servicios h2 {
@@ -315,10 +319,6 @@ section {
     color: var(--second-bg-color);
 }
 
-.contacto {
-    background: var(--bg-color);
-}
-
 .contacto form {
     max-width: 70rem;
     margin: 1rem auto;
@@ -352,11 +352,17 @@ section {
     align-items: center;
     flex-wrap: wrap;
     padding: 2rem 9%;
-    background: var(--second-bg-color); /* ELIMINADA BARRA AMARILLA */
+    background: var(--second-bg-color);
 }
 
 .footer-text p {
     font-size: 1.6rem;
+}
+
+/* FIX: COLOR TURQUESA PARA EL AÑO EN EL FOOTER */
+#anio-actual {
+    color: var(--main-color);
+    font-weight: 700;
 }
 
 .footer-iconTop a {
@@ -378,7 +384,7 @@ section {
     color: var(--second-bg-color);
 }
 
-/* MEDIA QUERIES COMPLETOS */
+/* MEDIA QUERIES ORIGINALES */
 @media (max-width: 1200px) {
     html { font-size: 55%; }
 }
@@ -402,9 +408,9 @@ section {
     .navbar.active { display: block; }
     .navbar a { display: block; font-size: 2rem; margin: 3rem 0; }
     .inicio { flex-direction: column; }
-    .inicio-img img { width: 70vw; margin-top: 4rem; }
+    .inicio-img img { width: 70vw; height: 70vw; margin-top: 4rem; }
     .sobreMi { flex-direction: column-reverse; }
-    .sobreMi img { width: 70vw; margin-top: 4rem; }
+    .sobreMi img { width: 70vw; height: 70vw; margin-top: 4rem; }
     .portfolio-container { grid-template-columns: repeat(2, 1fr); }
 }
 
