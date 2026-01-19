@@ -48,3 +48,7 @@ const typed = new Typed('.multiple-text', {
     backSpeed: 100,
     loop: true
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("anio-actual").textContent = new Date().getFullYear();
+});
