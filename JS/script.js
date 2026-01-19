@@ -1,4 +1,5 @@
 /*alternar la barra de iconos */
+/* Alternar la barra de iconos */
 let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 
@@ -7,13 +8,13 @@ menuIcon.onclick = () => {
     navbar.classList.toggle('active');
 };
 
-/*enlace activo de la sección de desplazamiento*/
+/* Enlace activo de la sección de desplazamiento */
 let secciones = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('header nav a');
 
 window.onscroll = () => {
-   secciones.forEach(sec => {
-        let top =window.scrollY;
+    secciones.forEach(sec => {
+        let top = window.scrollY;
         let offset = sec.offsetTop - 150;
         let height = sec.offsetHeight;
         let id = sec.getAttribute('id');
@@ -24,35 +25,36 @@ window.onscroll = () => {
                 document.querySelector(`header nav a[href*=${id}]`).classList.add('active');
             });
         };
-   });
+    });
 
-   let header = document.querySelector('header');
+    let header = document.querySelector('header');
+    header.classList.toggle('sticky', window.scrollY > 100);
 
-   header.classList.toggle('sticky', window.scrollY > 100);
-
-   menuIcon.classList.remove('bx-x');
+    menuIcon.classList.remove('bx-x');
     navbar.classList.remove('active');
 };
 
-/* scroll reveal */
-
+/* Scroll Reveal */
 ScrollReveal({ 
-    /*reset: true,*/
     distance: '80px',
     duration: 2000,
     delay: 100 
 });
 
-ScrollReveal().reveal ('.inicio-content, .heading', { origin: 'top'});
-ScrollReveal().reveal ('.inicio-img, .servicios-container, .portfolio-caja, .contacto-form', { origin: 'bottom'});
-ScrollReveal().reveal ('.inicio-content h1, .sobreMi-img', { origin: 'left'});
-ScrollReveal().reveal ('.inicio-content p, .sobreMi-content', { origin: 'right'});
+ScrollReveal().reveal('.inicio-content, .heading', { origin: 'top'});
+ScrollReveal().reveal('.inicio-img, .servicios-container, .portfolio-caja, .contacto-form', { origin: 'bottom'});
+ScrollReveal().reveal('.inicio-content h1, .sobreMi-img', { origin: 'left'});
+ScrollReveal().reveal('.inicio-content p, .sobreMi-content', { origin: 'right'});
 
-/* Typed js */
-
-const typed = new Typed ('.multiple-text', {
-    strings: ['Desarrollador Web Front-End', 'WordPress Dev', 'Diseñador', 'Guitarrista'],
-    typeSpeed:100,
-    backSpeed:100,
-    loop:true
+/* Typed JS - Actualizado sin la guitarra */
+const typed = new Typed('.multiple-text', {
+    strings: [
+        'Desarrollador Full Stack', 
+        'Especialista en WordPress', 
+        'Implementador de IA', 
+        'Diseñador Web UI/UX'
+    ],
+    typeSpeed: 100,
+    backSpeed: 100,
+    loop: true
 });
