@@ -1,5 +1,4 @@
-/*alternar la barra de iconos */
-/* Alternar la barra de iconos */
+
 let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 
@@ -46,15 +45,15 @@ ScrollReveal().reveal('.inicio-img, .servicios-container, .portfolio-caja, .cont
 ScrollReveal().reveal('.inicio-content h1, .sobreMi-img', { origin: 'left'});
 ScrollReveal().reveal('.inicio-content p, .sobreMi-content', { origin: 'right'});
 
-/* Typed JS - Actualizado sin la guitarra */
 const typed = new Typed('.multiple-text', {
     strings: [
-        'Desarrollador Full Stack', 
-        'Especialista en WordPress', 
-        'Implementador de IA', 
-        'Diseñador Web UI/UX'
+        'Desarrollo Fullstack', 
+        'WordPress Expert', 
+        'Implementación de IA', 
+        'Diseño Web'
     ],
     typeSpeed: 100,
     backSpeed: 100,
     loop: true
 });
+
